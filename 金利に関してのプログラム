@@ -1,0 +1,10 @@
+a=int(input('元金(円):'))
+p=float(input('年利率(%)：'))
+y=int(input('経過期間(年):'))
+p/=100.0
+for i in range(y):
+    a=a*(1.0+p)
+    x=a
+    X=a*(1.0+p)**y
+
+print(f'返済額(円):{x}')

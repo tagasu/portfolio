@@ -1,0 +1,9 @@
+def kair(n):
+    if n==0:
+      return 1
+    else:
+       return n*kair(n-1)
+
+x= int(input('いくつまで階上を求めますか？'))
+
+print(f'階上:{kair(x)}')
